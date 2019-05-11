@@ -1,0 +1,13 @@
+Etcd:
+    Cache: ../logs/etcd.cache
+    Endpoints:
+      - http://127.0.0.1:2379
+    TimeoutSeconds: 10
+    Root: /pub/pjoc
+    Event: event
+Logger:
+  Level: DEBUG
+#  FileName: logs/server.log
+  MaxBackups: 5
+  MaxSize: 100MB
+  MaxAge: 0

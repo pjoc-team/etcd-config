@@ -1,0 +1,21 @@
+before_script:
+  - go_build.sh
+
+test:
+  script:
+  - env
+  except:
+  - tags
+  tags:
+  - docker
+  - group-runner
+
+release:
+  script:
+  - env
+  only:
+  - tags
+  tags:
+  - docker
+  - group-runner
+
